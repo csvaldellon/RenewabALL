@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RenewabALL Leyte-Samar</title>
+    <script>
+        function change0(){
+            document.getElementById("changing_image").innerHTML="<img src=leyte.png>"
+        }
+        function change2(){
+            document.getElementById("changing_image").innerHTML="<img src=Leyte_Solar.png>"
+        }
+        function change3() {
+            document.getElementById("changing_image").innerHTML = "<img src=Leyte%20Geothermal.jpg>"
+        }
+    </script>
+</head>
+<body>
+    <div class="text-center">
+    <header>
+        <h1>RenewabALL Leyte-Samar</h1>
+    </header>
+    </div>
+    <div class="text-center"  id="changing_image">
+    <img src="leyte.png">
+    </div>
+    <a onclick="change0()"><button>Back</button></a>
+    <a onclick="change2()"><button>Solar</button></a>
+    <a onclick="change3()"><button>Geothermal</button></a>
+    <div>
+        <img src="1%20Solar%20Startup%201.7%20RE%20vs%20non%20RE.PNG">
+    </div>
+</body>
+</html>

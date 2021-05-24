@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RenewabALL Visayas</title>
+    <script>
+        function change2(){
+            document.getElementById("changing_image").innerHTML="<img src=1%20Solar%20Startup%200.2%20Visayas.PNG>"
+        }
+        function change0(){
+            document.getElementById("changing_image").innerHTML="<img src=1%20Solar%20Startup%201.9%20RE%20vs%20non%20RE.PNG>"
+        }
+        function change1(){
+            document.getElementById("changing_image").innerHTML="<img src=1%20Solar%20Startup%201.12RE%20vs%20non%20RE.PNG>"
+        }
+        function change3(){
+            document.getElementById("changing_image").innerHTML="<img src=1%20Solar%20Startup%201.2%20RE%20vs%20non%20RE.PNG>"
+        }
+    </script>
+</head>
+<body>
+    <div class="text-center" id="box">
+    <header>
+        <h1>RenewabALL Visayas</h1>
+    </header>
+    <a>Click a subregion to explore RE in Visayas or click buttons below to learn more about RE in Visayas!</a><br/>
+    <img src="https://expat2phils.files.wordpress.com/2008/04/600px-visayas_regions.png?w=600&zoom=2" usemap="#workmap">
+    </div>
+    <map name="workmap">
+        <area shape="rect" coords="500,0,600,200" alt="Leyte-Samar" href="RenewabALL_Leyte_Samar.html">
+        <area shape="rect" coords="400,110,425,250" alt="Negros" href="RenewabALL_Negros.html">
+        <area shape="rect" coords="455,90,480,200" alt="Cebu" href="RenewabALL_Cebu.html">
+        <area shape="circle" coords="480,200,10" alt="Bohol" href="RenewabALL_Bohol.html">
+        <area shape="circle" coords="350,100,50" alt="Bohol" href="RenewabALL_Panay.html">
+    </map>
+    <a onclick="change2()"><button>See Visayas Generation vs Consumption</button></a>
+    <a onclick="change0()"><button>See Solar Stats</button></a>
+    <a onclick="change1()"><button>See All Plant Subtype Stats</button></a>
+    <a onclick="change3()"><button>See non RE vs RE</button></a>
+    <div id="changing_image"></div>
+</body>
+</html>

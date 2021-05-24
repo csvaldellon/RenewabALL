@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RenewabALL</title>
+    <script>
+        function change0(){
+            document.getElementById("changing_image").innerHTML="<img src=2_Philippines_Cons_Linechart.png>"
+        }
+        function change1(){
+            document.getElementById("changing_image").innerHTML="<img src=2_Philippines_Esales_Cons.png>"
+        }
+        function change2(){
+            document.getElementById("changing_image").innerHTML="<img src=2_Philippines_Cons_Boxplot.png>"
+        }
+        function change3(){
+            document.getElementById("changing_image").innerHTML="<img src=2_Philippines_Genr_Linechart.png>"
+        }
+        function change4() {
+            document.getElementById("changing_image").innerHTML = "<img src=2_Philippines_Genr_Boxplot.png>"
+        }
+        function ClearFields() {
+            date.value = ""
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.2.4/lib/bundle.min.js"></script>
+    <script>
+        // const dfd = require("danfojs-node")
+        function home() {
+            let userDate = document.getElementById("date").value
+            // let userDate = "2022-07"
+            let model = new dfd.DataFrame([
+  {
+    "Date": "2021-01",
+    "Luzon": 9374.527969,
+    "Visayas": 1962.586257,
+    "Mindanao": 1877.779313
+  },
+  {
+    "Date": "2021-02",
+    "Luzon": 9641.756793,
+    "Visayas": 2003.941458,
+    "Mindanao": 1867.319959
+  },
+  {
+    "Date": "2021-03",
+    "Luzon": 10139.92825,
+    "Visayas": 2037.26923,
+    "Mindanao": 1871.960131
+  },
+  {
+    "Date": "2021-04",
+    "Luzon": 10515.31906,
+    "Visayas": 2065.999074,
+    "Mindanao": 1874.596411
+  },
+  {
+    "Date": "2021-05",
+    "Luzon": 10758.96735,
+    "Visayas": 2110.196665,
+    "Mindanao": 1926.897727
+  },
+  {
+    "Date": "2021-06",
+    "Luzon": 10694.59452,
+    "Visayas": 2089.526415,
+    "Mindanao": 1929.700944
+  },
+  {
+    "Date": "2021-07",
+    "Luzon": 10422.69753,
+    "Visayas": 2048.251496,
+    "Mindanao": 1909.444305
+  },
+  {
+    "Date": "2021-08",
+    "Luzon": 10285.63812,
+    "Visayas": 2074.063268,
+    "Mindanao": 1932.641061
+  },
+  {
+    "Date": "2021-09",
+    "Luzon": 10276.27988,
+    "Visayas": 2089.167207,
+    "Mindanao": 1929.931409
+  },
+  {
+    "Date": "2021-10",
+    "Luzon": 10186.1808,
+    "Visayas": 2106.298716,
+    "Mindanao": 1950.320683
+  },
+  {
+    "Date": "2021-11",
+    "Luzon": 10099.923,
+    "Visayas": 2117.118147,
+    "Mindanao": 1973.435307
+  },
+  {
+    "Date": "2021-12",
+    "Luzon": 10014.07255,
+    "Visayas": 2103.920175,
+    "Mindanao": 1982.616921
+  },
+  {
+    "Date": "2022-01",
+    "Luzon": 9558.829465,
+    "Visayas": 2026.491398,
+    "Mindanao": 1921.144836
+  },
+  {
+    "Date": "2022-02",
+    "Luzon": 9831.001916,
+    "Visayas": 2063.855945,
+    "Mindanao": 1910.685482
+  },
+  {
+    "Date": "2022-03",
+    "Luzon": 10338.62632,
+    "Visayas": 2097.183716,
+    "Mindanao": 1915.325654
+  },
+  {
+    "Date": "2022-04",
+    "Luzon": 10721.0372,
+    "Visayas": 2125.91356,
+    "Mindanao": 1917.961934
+  },
+  {
+    "Date": "2022-05",
+    "Luzon": 10969.10955,
+    "Visayas": 2170.111151,
+    "Mindanao": 1970.26325
+  },
+  {
+    "Date": "2022-06",
+    "Luzon": 10903.13996,
+    "Visayas": 2149.440902,
+    "Mindanao": 1973.066467
+  },
+  {
+    "Date": "2022-07",
+    "Luzon": 10625.61122,
+    "Visayas": 2108.165982,
+    "Mindanao": 1952.809829
+  },
+  {
+    "Date": "2022-08",
+    "Luzon": 10485.55914,
+    "Visayas": 2133.977755,
+    "Mindanao": 1976.006584
+  },
+  {
+    "Date": "2022-09",
+    "Luzon": 10475.696,
+    "Visayas": 2149.081694,
+    "Mindanao": 1973.296932
+  },
+  {
+    "Date": "2022-10",
+    "Luzon": 10383.52936,
+    "Visayas": 2166.213203,
+    "Mindanao": 1993.686206
+  },
+  {
+    "Date": "2022-11",
+    "Luzon": 10295.28498,
+    "Visayas": 2177.032634,
+    "Mindanao": 2016.80083
+  },
+  {
+    "Date": "2022-12",
+    "Luzon": 10207.4622,
+    "Visayas": 2163.834662,
+    "Mindanao": 2025.982444
+  },
+  {
+    "Date": "2023-01",
+    "Luzon": 9743.130962,
+    "Visayas": 2086.405884,
+    "Mindanao": 1964.510359
+  },
+  {
+    "Date": "2023-02",
+    "Luzon": 10020.24704,
+    "Visayas": 2123.770432,
+    "Mindanao": 1954.051005
+  },
+  {
+    "Date": "2023-03",
+    "Luzon": 10537.32438,
+    "Visayas": 2157.098203,
+    "Mindanao": 1958.691177
+  },
+  {
+    "Date": "2023-04",
+    "Luzon": 10926.75534,
+    "Visayas": 2185.828047,
+    "Mindanao": 1961.327457
+  },
+  {
+    "Date": "2023-05",
+    "Luzon": 11179.25175,
+    "Visayas": 2230.025638,
+    "Mindanao": 2013.628773
+  },
+  {
+    "Date": "2023-06",
+    "Luzon": 11111.68541,
+    "Visayas": 2209.355389,
+    "Mindanao": 2016.43199
+  },
+  {
+    "Date": "2023-07",
+    "Luzon": 10828.52492,
+    "Visayas": 2168.080469,
+    "Mindanao": 1996.175352
+  },
+  {
+    "Date": "2023-08",
+    "Luzon": 10685.48015,
+    "Visayas": 2193.892242,
+    "Mindanao": 2019.372107
+  },
+  {
+    "Date": "2023-09",
+    "Luzon": 10675.11212,
+    "Visayas": 2208.996181,
+    "Mindanao": 2016.662455
+  },
+  {
+    "Date": "2023-10",
+    "Luzon": 10580.87793,
+    "Visayas": 2226.12769,
+    "Mindanao": 2037.051729
+  },
+  {
+    "Date": "2023-11",
+    "Luzon": 10490.64696,
+    "Visayas": 2236.947121,
+    "Mindanao": 2060.166353
+  },
+  {
+    "Date": "2023-12",
+    "Luzon": 10400.85185,
+    "Visayas": 2223.749149,
+    "Mindanao": 2069.347967
+  },
+  {
+    "Date": "2024-01",
+    "Luzon": 9927.432458,
+    "Visayas": 2146.320371,
+    "Mindanao": 2007.875882
+  },
+  {
+    "Date": "2024-02",
+    "Luzon": 10209.49216,
+    "Visayas": 2183.684919,
+    "Mindanao": 1997.416528
+  },
+  {
+    "Date": "2024-03",
+    "Luzon": 10736.02245,
+    "Visayas": 2217.01269,
+    "Mindanao": 2002.0567
+  },
+  {
+    "Date": "2024-04",
+    "Luzon": 11132.47349,
+    "Visayas": 2245.742534,
+    "Mindanao": 2004.69298
+  }
+])
+            // var model = new dfd.read_csv("Peak_Demand_Predictions.csv")
+            var luzonValue = model["Luzon"][model["Date"] === userDate]
+            var visayasValue = model["Visayas"][model["Date"] === userDate]
+            var mindanaoValue = model["Mindanao"][model["Date"] === userDate]
+            document.getElementById("predLuzon").innerHTML = model.query({"column": "Date", "is":"==", "to":userDate})["Luzon"].values
+            document.getElementById("visayasValue").innerHTML = model.query({"column": "Date", "is":"==", "to":userDate})["Visayas"].values
+            document.getElementById("mindanaoValue").innerHTML = model.query({"column": "Date", "is":"==", "to":userDate})["Mindanao"].values
+        }
+    </script>
+</head>
+<body>
+<div class="text-center" id="box">
+    <header>
+        <h1>RenewabALL</h1>
+    </header>
+    <a>Click a region or a button below to explore RE in Philippines!</a><br/>
+    <img src="https://www.touropia.com/gfx/b/2019/08/philippines.png" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="200,0,600,300" alt="Luzon" href="RenewabALL_Luzon.html">
+        <area shape="rect" coords="200,350,600,450" alt="Visayas" href="RenewabALL_Visayas.html">
+        <area shape="rect" coords="200,475,600,600" alt="Mindanao" href="RenewabALL_Mindanao.html">
+    </map>
+    <div>
+        <input type="text" id="date" />
+        <button onclick="home()">Predict Peak Demand Now!</button>
+        <button onclick="ClearFields()">Reset</button>
+    </div>
+    Luzon:
+    <a id="predLuzon">0</a>
+     MW
+    <br/>
+    Visayas:
+    <a id="visayasValue">0</a>
+     MW
+    <br/>
+    Mindanao:
+    <a id="mindanaoValue">0</a>
+     MW
+    <br/>
+    <a onclick="change0()"><button>See Overall Electricity Consumption</button></a>
+    <a onclick="change1()"><button>See Overall Electricity Sales Consumption</button></a>
+    <a onclick="change2()"><button>See Electricity Consumption Statistics</button></a>
+    <a onclick="change3()"><button>See Overall Power Generation</button></a>
+    <a onclick="change4()"><button>See Power Generation Statistics</button></a>
+    <div id="changing_image"></div>
+</div>
+</body>
+</html>
